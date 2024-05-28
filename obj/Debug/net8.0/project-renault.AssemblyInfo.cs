@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("ac20a5d6-8fc7-4828-bf62-5094ee8dabb4")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e7de8e0142f7ce20ee7dd31e8027e878a329ab4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+87a0640fd318a83744809f1590c38a9764b62a5b")]
 [assembly: System.Reflection.AssemblyProductAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyTitleAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

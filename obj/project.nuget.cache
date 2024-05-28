@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YVr+BVB9fWgROwuuj9EXPKBFxeFsLiJ7tiZmSRZEdvlS7CjBcQveJH6vs6oj/OeSbegw5ATfw8D3QNgSebLw/w==",
+  "dgSpecHash": "A0YklTB9azyzYNgL7gtkrX4v0wX4+dSFzYbh1tyDwZ4hplcUpX5w6SziPLAbJURsOofYb0KSQs3LJgEw98ZwTA==",
   "success": true,
-  "projectFilePath": "C:\\ProjetosProgramação\\Projeto-Renault\\back\\project-renault.csproj",
+  "projectFilePath": "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -28,6 +28,7 @@
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\mysqlconnector\\2.3.7\\mysqlconnector.2.3.7.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.2\\pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",

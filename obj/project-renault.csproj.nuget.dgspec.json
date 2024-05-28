@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosProgramação\\Projeto-Renault\\back\\project-renault.csproj": {}
+    "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosProgramação\\Projeto-Renault\\back\\project-renault.csproj": {
+    "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosProgramação\\Projeto-Renault\\back\\project-renault.csproj",
+        "projectUniqueName": "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj",
         "projectName": "project-renault",
-        "projectPath": "C:\\ProjetosProgramação\\Projeto-Renault\\back\\project-renault.csproj",
+        "projectPath": "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosProgramação\\Projeto-Renault\\back\\obj\\",
+        "outputPath": "C:\\ProjetosProgramação\\back-renault\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.6, )"
             },
             "MySqlConnector": {
               "target": "Package",
