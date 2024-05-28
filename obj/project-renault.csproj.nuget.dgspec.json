@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj": {}
+    "C:\\projetosTestes\\api-risk-manager-renault\\project-renault.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj": {
+    "C:\\projetosTestes\\api-risk-manager-renault\\project-renault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj",
+        "projectUniqueName": "C:\\projetosTestes\\api-risk-manager-renault\\project-renault.csproj",
         "projectName": "project-renault",
-        "projectPath": "C:\\ProjetosProgramação\\back-renault\\project-renault.csproj",
-        "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosProgramação\\back-renault\\obj\\",
+        "projectPath": "C:\\projetosTestes\\api-risk-manager-renault\\project-renault.csproj",
+        "packagesPath": "C:\\Users\\Bernardo Garcia\\.nuget\\packages\\",
+        "outputPath": "C:\\projetosTestes\\api-risk-manager-renault\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bernardo Garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.5, )"
@@ -58,6 +62,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.6, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.32, )"
             },
             "MySqlConnector": {
               "target": "Package",

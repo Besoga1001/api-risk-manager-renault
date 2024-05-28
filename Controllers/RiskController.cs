@@ -1,6 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using project_renault.Models;
+using Dapper;
+using MySql.Data;
+using System.Collections.Generic;
+using System.Data;
+using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+using System.Data.Common;
 
 namespace project_renault.Controllers
 {
@@ -84,5 +91,61 @@ namespace project_renault.Controllers
 
             return NoContent();
         }
+
+        [HttpGet]
+        [Route("filters_project")]
+        public async Task<IActionResult> GetFilters()
+        {
+            try
+            {
+                var projetos = await _context.Risk
+                    .Select(r => r.Projeto)
+                    .Distinct()
+                    .ToListAsync();
+                return Ok(projetos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("filters_metier")]
+        public async Task<IActionResult> GetMetier()
+        {
+            try
+            {
+                var metiers = await _context.Risk
+                    .Select(r => r.Metier)
+                    .Distinct()
+                    .ToListAsync();
+                return Ok(metiers);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
+        [HttpGet]
+        [Route("filters_jalon")]
+        public async Task<IActionResult> GetJalon()
+        {
+            try
+            {
+                var jalon = await _context.Risk
+                    .Select(r => r.JalonAfetado)
+                    .Distinct()
+                    .ToListAsync();
+                return Ok(jalon);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erro interno do servidor: {ex.Message}");
+            }
+        }
+
+
     }
 }

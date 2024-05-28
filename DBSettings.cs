@@ -10,5 +10,6 @@ namespace project_renault
         }
 
         public DbSet<RiskModel> Risk { get; set; }
+
     }
 }
