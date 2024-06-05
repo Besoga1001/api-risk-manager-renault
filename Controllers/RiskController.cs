@@ -21,22 +21,22 @@ namespace project_renault.Controllers
         [Route("getAll")]
         public async Task<IActionResult> GetAllRisk()
         {
-            await riskService.GetAllRisk();
-            return Ok();
+            var response = await riskService.GetAllRisk();
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdRisk(int? id)
         {
-            await riskService.GetByIdRisk(id);
-            return Ok();
+            var response = await riskService.GetByIdRisk(id);
+            return Ok(response);
         }
 
         [HttpPost]
         public async Task<IActionResult> AddRisk(RiskModel risk)
         {
-            riskService.AddRisk(risk);
-            return Ok();
+            await riskService.AddRisk(risk);
+            return Ok(risk);
         }
 
         [HttpPut]
