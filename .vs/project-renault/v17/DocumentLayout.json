@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projetosprograma\u00E7\u00E3o\\api-risk-manager-renault\\controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:controllers\\riskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projetosprograma\u00E7\u00E3o\\api-risk-manager-renault\\models\\riskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:models\\riskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projetosprograma\u00E7\u00E3o\\api-risk-manager-renault\\services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projetosprograma\u00E7\u00E3o\\api-risk-manager-renault\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,54 +22,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T22:49:50.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RiskModel.cs",
-              "DocumentMoniker": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Models\\RiskModel.cs",
-              "RelativeDocumentMoniker": "Models\\RiskModel.cs",
-              "ToolTip": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Models\\RiskModel.cs",
-              "RelativeToolTip": "Models\\RiskModel.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwBAAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T23:00:52.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RiskService.cs",
               "DocumentMoniker": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Services\\RiskService.cs",
               "RelativeDocumentMoniker": "Services\\RiskService.cs",
               "ToolTip": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Services\\RiskService.cs",
               "RelativeToolTip": "Services\\RiskService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T22:47:01.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RiskController.cs",
-              "DocumentMoniker": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Controllers\\RiskController.cs",
-              "RelativeDocumentMoniker": "Controllers\\RiskController.cs",
-              "ToolTip": "C:\\ProjetosPrograma\u00E7\u00E3o\\api-risk-manager-renault\\Controllers\\RiskController.cs",
-              "RelativeToolTip": "Controllers\\RiskController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T00:36:39.826Z",
+              "WhenOpened": "2024-06-17T23:16:12.925Z",
               "EditorCaption": ""
             }
           ]

@@ -1,8 +1,5 @@
-﻿using Google.Protobuf.Collections;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using project_renault.Models;
-using System.Diagnostics.Metrics;
 
 namespace project_renault.Services
 {
@@ -66,7 +63,7 @@ namespace project_renault.Services
 
         }
 
-        public async Task<List<String>> GetProjects()
+        public async Task<List<string>?> GetProjects()
         {
             try
             {
@@ -82,9 +79,7 @@ namespace project_renault.Services
             }
         }
 
-        [HttpGet]
-        [Route("filters_metier")]
-        public async Task<List<String>> GetMetier()
+        public async Task<List<string>?> GetMetier()
         {
             try
             {
@@ -96,11 +91,12 @@ namespace project_renault.Services
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                // Opcional: você pode adicionar algum logging aqui
+                throw new Exception("An error occurred while getting Jalon", ex);
             }
         }
 
-        public async Task<List<String>> GetJalon()
+        public async Task<List<string>?> GetJalon()
         {
             try
             {
@@ -112,7 +108,8 @@ namespace project_renault.Services
             }
             catch (Exception ex)
             {
-                throw new Exception();
+                // Opcional: você pode adicionar algum logging aqui
+                throw new Exception("An error occurred while getting Jalon", ex);
             }
         }
     }

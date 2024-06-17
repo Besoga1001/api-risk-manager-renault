@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using project_renault.Models;
 using project_renault.Services;
-using System.Data;
 
 namespace project_renault.Controllers
 {
@@ -49,21 +47,44 @@ namespace project_renault.Controllers
         [Route("filters_project")]
         public async Task<IActionResult> GetProjects()
         {
-            return Ok(riskService.GetProjects());
+            try
+            {
+                var project = await riskService.GetProjects();
+                return Ok(project);
+            }
+            catch (Exception ex) {
+                return StatusCode(500, "Erro Interno.");
+            }
         }
 
         [HttpGet]
         [Route("filters_metier")]
         public async Task<IActionResult> GetMetier()
         {
-            return Ok(riskService.GetMetier());
+            try {
+                var metier = await riskService.GetMetier();
+                return Ok(metier);
+            } 
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro Interno.");
+            }
+
         }
 
         [HttpGet]
         [Route("filters_jalon")]
         public async Task<IActionResult> GetJalon()
         {
-            return Ok(riskService.GetJalon());
+            try
+            {
+                var jalon = await riskService.GetJalon();
+                return Ok(jalon);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro Interno.");
+            }
         }
 
     }
