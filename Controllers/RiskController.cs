@@ -4,7 +4,7 @@ using project_renault.Services;
 
 namespace project_renault.Controllers
 {
-    [Route("[controller]")]
+    [Route("/risk")]
     [ApiController]
     public class RiskController : Controller
     {

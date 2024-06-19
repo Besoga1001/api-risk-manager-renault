@@ -17,6 +17,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<DBSettings>(options => options.UseMySql(mySqlConnector, ServerVersion.AutoDetect(mySqlConnector)));
 builder.Services.AddScoped<RiskService>();
+builder.Services.AddScoped<UserService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

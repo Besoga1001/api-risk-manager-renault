@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "orlWmLwmMcYKVxDVI1AP8ycuSVw+OEecO1coJ9R4hsWmUJ41QVuM2cCnjs2v29Tbd8m1v4MYVwuCwGF35ImQ4w==",
+  "dgSpecHash": "tv+DuAr7D92n1GvT6e0DSPaVHPZTz3RP5v6x2vQheBuVtT0lbxsWaCqg1YPYLeMVLvEaxiwX229VwUxP90/qWQ==",
   "success": true,
-  "projectFilePath": "C:\\ProjetosProgramação\\api-risk-manager-renault\\project-renault.csproj",
+  "projectFilePath": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\project-renault.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrador\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Administrador\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",

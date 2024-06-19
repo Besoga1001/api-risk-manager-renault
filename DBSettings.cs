@@ -10,6 +10,7 @@ namespace project_renault
         }
 
         public DbSet<RiskModel> Risk { get; set; }
+        public DbSet<UserModel> User { get; set; }
 
     }
 }

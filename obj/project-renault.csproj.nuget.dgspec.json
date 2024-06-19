@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ProjetosProgramação\\api-risk-manager-renault\\project-renault.csproj": {}
+    "C:\\Projects\\Dotnet\\api-risk-manager-renault\\project-renault.csproj": {}
   },
   "projects": {
-    "C:\\ProjetosProgramação\\api-risk-manager-renault\\project-renault.csproj": {
+    "C:\\Projects\\Dotnet\\api-risk-manager-renault\\project-renault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjetosProgramação\\api-risk-manager-renault\\project-renault.csproj",
+        "projectUniqueName": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\project-renault.csproj",
         "projectName": "project-renault",
-        "projectPath": "C:\\ProjetosProgramação\\api-risk-manager-renault\\project-renault.csproj",
+        "projectPath": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\project-renault.csproj",
         "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjetosProgramação\\api-risk-manager-renault\\obj\\",
+        "outputPath": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using project_renault;
 
@@ -11,9 +12,11 @@ using project_renault;
 namespace project_renault.Migrations
 {
     [DbContext(typeof(DBSettings))]
-    partial class DBSettingsModelSnapshot : ModelSnapshot
+    [Migration("20240618001112_UserModel")]
+    partial class UserModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,34 +78,6 @@ namespace project_renault.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Risk");
-                });
-
-            modelBuilder.Entity("project_renault.Models.UserModel", b =>
-                {
-                    b.Property<int>("id_usuario")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("id_usuario"));
-
-                    b.Property<string>("login")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("nome")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<int>("token")
-                        .HasColumnType("int");
-
-                    b.HasKey("id_usuario");
-
-                    b.ToTable("User");
                 });
 #pragma warning restore 612, 618
         }
