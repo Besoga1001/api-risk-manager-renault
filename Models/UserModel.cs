@@ -9,7 +9,7 @@ namespace project_renault.Models
         public string login { get; set; }
         public string nome { get; set; }
         public string senha { get; set; }
-        public int token { get; set; }
+        public Boolean sessaoValida { get; set; }
 
     }
 }

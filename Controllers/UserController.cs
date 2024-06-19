@@ -20,7 +20,7 @@ namespace project_renault.Controllers
         public async Task<IActionResult> doLogin(UserDTO userDTO) 
         {
             var user = await userService.doLogin(userDTO);
-            if (user == null)
+            if (user.sessaoValida == false)
             {
                 return NotFound(user);
             }

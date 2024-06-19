@@ -31,12 +31,17 @@ namespace project_renault.Services
                 user.id_usuario = 0;
                 user.login = "";
                 user.senha = "";
-                user.token = 0;
+                user.sessaoValida = true;
                 return user;
             }
             else
             {
-                return null;
+                user.id_usuario = 0;
+                user.login = "";
+                user.senha = "";
+                user.nome = "";
+                user.sessaoValida = false;
+                return user;
             }
 
         }
