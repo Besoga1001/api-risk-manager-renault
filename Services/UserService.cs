@@ -12,7 +12,7 @@ namespace project_renault.Services
             _context = context;
         }
 
-        public async Task<string> doLogin(UserDTO userDTO)
+        public async Task<UserModel> doLogin(UserDTO userDTO)
         {
             if (userDTO.login == null)
             {
@@ -28,7 +28,11 @@ namespace project_renault.Services
 
             if (user.senha == userDTO.password)
             {
-                return user.nome;
+                user.id_usuario = 0;
+                user.login = "";
+                user.senha = "";
+                user.token = 0;
+                return user;
             }
             else
             {
