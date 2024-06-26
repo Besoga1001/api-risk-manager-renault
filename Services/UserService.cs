@@ -28,18 +28,13 @@ namespace project_renault.Services
 
             if (user.senha == userDTO.password)
             {
-                user.id_usuario = 0;
-                user.login = "";
                 user.senha = "";
                 user.sessaoValida = true;
                 return user;
             }
             else
             {
-                user.id_usuario = 0;
-                user.login = "";
                 user.senha = "";
-                user.nome = "";
                 user.sessaoValida = false;
                 return user;
             }

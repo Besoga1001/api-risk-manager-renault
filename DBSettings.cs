@@ -12,5 +12,13 @@ namespace project_renault
         public DbSet<RiskModel> Risk { get; set; }
         public DbSet<UserModel> User { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+            // Configurações adicionais do modelo podem ser adicionadas aqui
+
+            base.OnModelCreating(modelBuilder);
+        }
+
     }
 }

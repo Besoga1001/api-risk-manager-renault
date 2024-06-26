@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using project_renault;
 
@@ -11,9 +12,11 @@ using project_renault;
 namespace project_renault.Migrations
 {
     [DbContext(typeof(DBSettings))]
-    partial class DBSettingsModelSnapshot : ModelSnapshot
+    [Migration("20240626003038_Test")]
+    partial class Test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,9 +77,6 @@ namespace project_renault.Migrations
 
                     b.Property<int>("id_usuario")
                         .HasColumnType("int");
-
-                    b.Property<string>("nome_usuario")
-                        .HasColumnType("longtext");
 
                     b.HasKey("Id");
 

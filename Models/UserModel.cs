@@ -10,6 +10,6 @@ namespace project_renault.Models
         public string nome { get; set; }
         public string senha { get; set; }
         public Boolean sessaoValida { get; set; }
-
+        public string email { get; set; }
     }
 }

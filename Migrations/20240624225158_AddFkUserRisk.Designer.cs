@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using project_renault;
 
@@ -11,9 +12,11 @@ using project_renault;
 namespace project_renault.Migrations
 {
     [DbContext(typeof(DBSettings))]
-    partial class DBSettingsModelSnapshot : ModelSnapshot
+    [Migration("20240624225158_AddFkUserRisk")]
+    partial class AddFkUserRisk
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -75,10 +78,10 @@ namespace project_renault.Migrations
                     b.Property<int>("id_usuario")
                         .HasColumnType("int");
 
-                    b.Property<string>("nome_usuario")
-                        .HasColumnType("longtext");
-
                     b.HasKey("Id");
+
+                    b.HasIndex("id_usuario")
+                        .IsUnique();
 
                     b.ToTable("Risk");
                 });
@@ -90,6 +93,9 @@ namespace project_renault.Migrations
                         .HasColumnType("int");
 
                     MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("id_usuario"));
+
+                    b.Property<int?>("Id")
+                        .HasColumnType("int");
 
                     b.Property<string>("email")
                         .IsRequired()
@@ -113,6 +119,23 @@ namespace project_renault.Migrations
                     b.HasKey("id_usuario");
 
                     b.ToTable("User");
+                });
+
+            modelBuilder.Entity("project_renault.Models.RiskModel", b =>
+                {
+                    b.HasOne("project_renault.Models.UserModel", "UserModel")
+                        .WithOne("RiskModel")
+                        .HasForeignKey("project_renault.Models.RiskModel", "id_usuario")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("UserModel");
+                });
+
+            modelBuilder.Entity("project_renault.Models.UserModel", b =>
+                {
+                    b.Navigation("RiskModel")
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

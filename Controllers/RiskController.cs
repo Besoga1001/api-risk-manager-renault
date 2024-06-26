@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using project_renault.Models;
 using project_renault.Services;
 
@@ -52,7 +54,8 @@ namespace project_renault.Controllers
                 var project = await riskService.GetProjects();
                 return Ok(project);
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 return StatusCode(500, "Erro Interno.");
             }
         }
@@ -61,10 +64,11 @@ namespace project_renault.Controllers
         [Route("filters_metier")]
         public async Task<IActionResult> GetMetier()
         {
-            try {
+            try
+            {
                 var metier = await riskService.GetMetier();
                 return Ok(metier);
-            } 
+            }
             catch (Exception ex)
             {
                 return StatusCode(500, "Erro Interno.");
@@ -80,6 +84,20 @@ namespace project_renault.Controllers
             {
                 var jalon = await riskService.GetJalon();
                 return Ok(jalon);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro Interno.");
+            }
+        }
+
+        [HttpPost("import")]
+        public async Task<IActionResult> ImportJson()
+        {
+            try
+            {
+                var response = await riskService.ImportJson();
+                return Ok(response);
             }
             catch (Exception ex)
             {
