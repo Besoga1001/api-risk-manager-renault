@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using project_renault;
 
@@ -11,9 +12,11 @@ using project_renault;
 namespace project_renault.Migrations
 {
     [DbContext(typeof(DBSettings))]
-    partial class DBSettingsModelSnapshot : ModelSnapshot
+    [Migration("20240627232213_addAlertTime2")]
+    partial class addAlertTime2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

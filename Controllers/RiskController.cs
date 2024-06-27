@@ -43,7 +43,8 @@ namespace project_renault.Controllers
         [HttpPut]
         public async Task<ActionResult<RiskModel>> PutRisk(RiskModel risk)
         {
-            return Ok(riskService.PutRisk(risk));
+            await riskService.PutRisk(risk);
+            return Ok(risk);
         }
 
         [HttpGet]

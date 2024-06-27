@@ -136,46 +136,5 @@ namespace project_renault.Services
             }
         }
 
-        public void EnviarEmail(string assunto, string mensagem) {
-
-            //var nome_usuario = _context.Risk
-            //           .Select(u => u.id)
-            //           .FirstOrDefault();
-
-            var email = _context.User
-                       .Where(u => u.nome == "nome_usuario")
-                       .Select(u => u.email)
-                       .FirstOrDefault();
-
-            try
-            {
-                // Configurações do servidor SMTP
-                SmtpClient smtpClient = new SmtpClient("smtp.seudominio.com"); // Substitua pelo seu servidor SMTP
-
-                // Credenciais de envio de email (caso necessite de autenticação)
-                smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new System.Net.NetworkCredential("seuemail@seudominio.com", "suasenha");
-
-                // Construindo o email
-                MailMessage mailMessage = new MailMessage();
-                mailMessage.From = new MailAddress("user@seudominio.com"); // Substitua pelo seu endereço de email
-                mailMessage.To.Add(email);
-                mailMessage.Subject = assunto;
-                mailMessage.Body = mensagem;
-                mailMessage.IsBodyHtml = true; // Se o corpo do email contém HTML
-
-                // Enviando o email
-                smtpClient.Send(mailMessage);
-
-                // Exemplo de mensagem de sucesso
-                Console.WriteLine("Email enviado com sucesso para " + email);
-            }
-            catch (Exception ex)
-            {
-                // Em caso de erro, capturamos a exceção e podemos tratar ou registrar
-                Console.WriteLine("Ocorreu um erro ao enviar o email: " + ex.Message);
-            }
-
-        }
     }
 }
