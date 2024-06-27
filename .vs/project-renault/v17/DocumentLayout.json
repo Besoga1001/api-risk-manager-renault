@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projects\\dotnet\\api-risk-manager-renault\\services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:services\\riskservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projects\\dotnet\\api-risk-manager-renault\\models\\riskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:models\\riskmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projects\\dotnet\\api-risk-manager-renault\\models\\solutionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:models\\solutionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|c:\\projects\\dotnet\\api-risk-manager-renault\\services\\solutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E866807A-B5D9-4699-B12B-DFEEB1E5572D}|project-renault.csproj|solutionrelative:services\\solutionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,6 +35,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RiskService.cs",
+              "DocumentMoniker": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Services\\RiskService.cs",
+              "RelativeDocumentMoniker": "Services\\RiskService.cs",
+              "ToolTip": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Services\\RiskService.cs",
+              "RelativeToolTip": "Services\\RiskService.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T21:43:34.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RiskModel.cs",
+              "DocumentMoniker": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Models\\RiskModel.cs",
+              "RelativeDocumentMoniker": "Models\\RiskModel.cs",
+              "ToolTip": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Models\\RiskModel.cs",
+              "RelativeToolTip": "Models\\RiskModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowBEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T21:38:58.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SolutionModel.cs",
+              "DocumentMoniker": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Models\\SolutionModel.cs",
+              "RelativeDocumentMoniker": "Models\\SolutionModel.cs",
+              "ToolTip": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Models\\SolutionModel.cs",
+              "RelativeToolTip": "Models\\SolutionModel.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T21:38:55.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SolutionService.cs",
               "DocumentMoniker": "C:\\Projects\\Dotnet\\api-risk-manager-renault\\Services\\SolutionService.cs",
               "RelativeDocumentMoniker": "Services\\SolutionService.cs",

@@ -13,7 +13,6 @@ namespace project_renault.Models
         public string? ClassificacaoRisco { get; set; }
         public string? Projeto { get; set; }
         public DateTime DataEntradaRisco { get; set; }
-        public DateTime DataFinalRisco { get; set; }
         public string? Impacto { get; set; }
         public string? ImpactoRenault { get; set; }
         public string? Consequencias { get; set; }
