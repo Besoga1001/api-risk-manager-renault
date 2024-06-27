@@ -5,13 +5,20 @@
 namespace project_renault.Migrations
 {
     /// <inheritdoc />
-    public partial class addUserNameColumn3 : Migration
+    public partial class addFk : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<int>(
-                name: "id_usuario",
+                name: "id_risk",
+                table: "Solution",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
+
+            migrationBuilder.AddColumn<int>(
+                name: "id_solution",
                 table: "Risk",
                 type: "int",
                 nullable: false,
@@ -22,7 +29,11 @@ namespace project_renault.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "id_usuario",
+                name: "id_risk",
+                table: "Solution");
+
+            migrationBuilder.DropColumn(
+                name: "id_solution",
                 table: "Risk");
         }
     }

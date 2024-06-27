@@ -72,15 +72,67 @@ namespace project_renault.Migrations
                     b.Property<string>("Tipo")
                         .HasColumnType("longtext");
 
-                    b.Property<int>("id_usuario")
+                    b.Property<int>("id_solution")
                         .HasColumnType("int");
 
-                    b.Property<string>("nome_usuario")
-                        .HasColumnType("longtext");
+                    b.Property<int>("id_usuario")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Risk");
+                });
+
+            modelBuilder.Entity("project_renault.Models.SolutionModel", b =>
+                {
+                    b.Property<int>("Id_Solution")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id_Solution"));
+
+                    b.Property<string>("Acao")
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("Capitalizacao")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<string>("Comentario")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Data_Resolucao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Estrategia")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("Id_Piloto")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Impacto_Resudual")
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("Inicio_Plano_De_Acao")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("Nome_Piloto")
+                        .HasColumnType("longtext");
+
+                    b.Property<float?>("Probabilidade_Residual")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Validacao_Acao")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Validacao_Risco")
+                        .HasColumnType("longtext");
+
+                    b.Property<int>("id_risk")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id_Solution");
+
+                    b.ToTable("Solution");
                 });
 
             modelBuilder.Entity("project_renault.Models.UserModel", b =>

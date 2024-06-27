@@ -12,8 +12,8 @@ using project_renault;
 namespace project_renault.Migrations
 {
     [DbContext(typeof(DBSettings))]
-    [Migration("20240626004238_Test2")]
-    partial class Test2
+    [Migration("20240627001619_solutionAdd")]
+    partial class solutionAdd
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

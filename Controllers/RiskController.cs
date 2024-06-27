@@ -10,6 +10,7 @@ namespace project_renault.Controllers
     [ApiController]
     public class RiskController : Controller
     {
+
         RiskService riskService;
 
         public RiskController(RiskService riskService)

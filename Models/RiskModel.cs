@@ -22,5 +22,7 @@ namespace project_renault.Models
         public int Status { get; set; }
         public int id_usuario { get; set; }
 
+        public int id_solution { get; set; }
+
     }
 }
