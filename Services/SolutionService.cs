@@ -1,18 +1,16 @@
-using Google.Protobuf.Collections;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Org.BouncyCastle.Ocsp;
 using project_renault.Models;
-using System.Diagnostics.Metrics;
 
 namespace project_renault.Services
 {
     public class SolutionService
     {
         DBSettings _context;
-        public SolutionService(DBSettings context)
+        RiskService riskService;
+        public SolutionService(DBSettings context, RiskService riskService)
         {
             _context = context;
+            this.riskService = riskService;
         }
 
         public async Task<List<SolutionModel>> GetAllSolution()
@@ -42,6 +40,15 @@ namespace project_renault.Services
             try
             {
                 await _context.Solution.AddAsync(solution);
+                await _context.SaveChangesAsync();
+
+                RiskModel? risk = await _context.Risk.FindAsync(solution.id_risk);
+                if (risk == null)
+                {
+                    throw new Exception();
+                }
+                risk.id_solution = solution.Id_Solution;
+                var resp = await riskService.PutRisk(risk);
                 await _context.SaveChangesAsync();
 
                 return solution;

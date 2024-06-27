@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05989634c2b8312ff90ae2dadc3480e865cfd2aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d84c4b476c7796728419dd48f62d4a1d6ed6d7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyTitleAttribute("project-renault")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
