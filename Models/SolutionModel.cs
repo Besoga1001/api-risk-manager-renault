@@ -11,9 +11,9 @@ namespace project_renault.Models
         public string? Impacto_Residual { get; set; }
         public string? Validacao_Acao { get; set; }
         public string? Validacao_Risco { get; set; }
-        public int Id_Piloto { get; set; }
+        public string? Id_Piloto { get; set; }
         public string? Nome_Piloto { get; set; }
-        public bool Capitalizacao { get; set; }
+        public string? Capitalizacao { get; set; }
         public DateTime Inicio_Plano_De_Acao { get; set; }
         public String? Acao { get; set; }
         public String? Comentario { get; set; }

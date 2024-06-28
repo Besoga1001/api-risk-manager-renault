@@ -1,5 +1,8 @@
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using project_renault.Models;
+using System.Net;
 using System.Net.Mail;
 
 namespace project_renault.Services
@@ -114,6 +117,61 @@ namespace project_renault.Services
             {
                 // Em caso de erro, capturamos a exceção e podemos tratar ou registrar
                 Console.WriteLine("Ocorreu um erro ao enviar o email: " + ex.Message);
+            }
+        }
+
+        public async Task<string> ImportJson()
+        {
+            try
+            {
+                // Carregar o arquivo JSON
+                string jsonFilePath = "solution.json";
+                var jsonData = await System.IO.File.ReadAllTextAsync(jsonFilePath);
+                var riscos = JsonConvert.DeserializeObject<List<SolutionModel>>(jsonData);
+
+                // Adicionar os dados ao contexto
+                _context.Solution.AddRange(riscos);
+                await _context.SaveChangesAsync();
+
+                return "Dados importados com sucesso.";
+            }
+            catch (Exception ex)
+            {
+                return "Erro ao importar dados: " + ex.Message;
+            }
+        }
+
+        
+        public string SendEmail()
+        {
+            try
+            {
+                // Configuração do servidor SMTP
+                var smtpClient = new SmtpClient("localhost")
+                {
+                    Port = 25,
+                    Credentials = new NetworkCredential("Administrator", "admin"),
+                    EnableSsl = false
+                };
+
+                // Configuração do email
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("bernardo.sousa.garcia@gmail.com"),
+                    Subject = "Test Email",
+                    Body = "This is a test email sent from the ASP.NET application.",
+                    IsBodyHtml = false,
+                };
+                mailMessage.To.Add("besogaedit@gmail.com");
+
+                // Enviar o email
+                smtpClient.Send(mailMessage);
+
+                return "Email sent successfully.";
+            }
+            catch (Exception ex)
+            {
+                return "";
             }
         }
     }

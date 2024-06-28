@@ -47,6 +47,33 @@ namespace project_renault.Controllers
             return Ok(response);
         }
 
+        [HttpPost("import")]
+        public async Task<IActionResult> ImportJson()
+        {
+            try
+            {
+                var response = await solutionService.ImportJson();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro Interno.");
+            }
+        }
+
+        [HttpPost("testEmail")]
+        public async Task<IActionResult> sendEmail()
+        {
+            try
+            {
+                var response = solutionService.SendEmail();
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Erro Interno.");
+            }
+        }
 
     }
 }

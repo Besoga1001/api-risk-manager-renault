@@ -651,3 +651,4 @@ C:\Projects\Dotnet\api-risk-manager-renault\obj\Debug\net8.0\project-renault.gen
 C:\Projects\Dotnet\api-risk-manager-renault\obj\Debug\net8.0\ref\project-renault.dll
 C:\Projects\Dotnet\api-risk-manager-renault\bin\Debug\net8.0\risco.json
 C:\Projects\Dotnet\api-risk-manager-renault\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Projects\Dotnet\api-risk-manager-renault\bin\Debug\net8.0\solution.json
